@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Welcome to Hogwarts</string>
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="begin">Your O.W.L.S. begin!</string>
+    <string name="name">Your Name</string>
+    <string name="score">Score</string>
+    <string name="restart">Restart</string>
+
+    <string name="question1_body">Which of these four is the ghost of Gryffindor ?</string>
+    <string name="question1_answer">Nearly headless Nick</string>
+    <string name="question1_false1">The grey lady</string>
+    <string name="question1_false2">Fat Friar</string>
+    <string name="question1_false3">The bloody Baron</string>
+
+    <string name="question2_body">The Gryffindor Common Room is located on the ___floor.</string>
+    <string name="question2_answer">seventh</string>
+    <string name="question2_false1">third</string>
+    <string name="question2_false2">fifth</string>
+    <string name="question2_false3">fourth</string>
+
+    <string name="question3_body">The emblematic animal of the Slytherin house is a __.</string>
+    <string name="question3_answer">snake</string>
+    <string name="question3_false1">tiger</string>
+    <string name="question3_false2">eagle</string>
+    <string name="question3_false3">bear</string>
+
+    <string name="question4_body">Slytherin corresponds roughly with the element of __.</string>
+    <string name="question4_answer">water</string>
+    <string name="question4_false1">fire</string>
+    <string name="question4_false2">air</string>
+    <string name="question4_false3">earth</string>
+
+    <string name="question5_body">Students sorted into Hufflepuff often demonstrate exceptional abilities in __.</string>
+    <string name="question5_answer">herbology</string>
+    <string name="question5_false1">potions</string>
+    <string name="question5_false2">divination</string>
+    <string name="question5_false3">astronomy</string>
+
+    <string name="question6_body">Which of these students is not a hufflepuff ?</string>
+    <string name="question6_answer">Millicent Bulstrode</string>
+    <string name="question6_false1">Ernie Mac Millan</string>
+    <string name="question6_false2">Susan Bones</string>
+    <string name="question6_false3">Justin Finch-Fletchley</string>
+
+    <string name="question7_body">To enter the Ravenclaw Common Room you have to __.</string>
+    <string name="question7_answer">solve a riddle</string>
+    <string name="question7_false1">say the password</string>
+    <string name="question7_false2">solve a puzzle</string>
+    <string name="question7_false3">break the door</string>
+
+    <string name="question8_body">Ignatia WildSmith invented the __.</string>
+    <string name="question8_answer">floo powder</string>
+    <string name="question8_false1">lunascope</string>
+    <string name="question8_false2">love potions</string>
+    <string name="question8_false3">felix felicis</string>
+
+    <string name="question9_body">Check the one who is right.</string>
+    <string name="question9_false">Tom Riddle is Voldemort\'s younger brother.</string>
+    <string name="question9_answer">Remus Lupin was bitten by a Greyback at the age of five.</string>
+
+
+
+</resources>

@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#D50000</item>
+        <item name="colorPrimaryDark">#F44336</item>
+        <item name="colorAccent">#B71C1C</item>
+    </style>
+
+    <style name="Question">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#D50000</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="Question.number">
+        <item name="android:textColor">#D50000</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">36dp</item>
+        <item name="android:layout_marginLeft">52dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#D50000</item>
+        <item name="android:textColorHint">#D50000</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:paddingLeft">36dp</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#D50000</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RadioButton1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="RadioButton2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">24dp</item>
+    </style>
+
+    <style name="RadioButton3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">48dp</item>
+    </style>
+
+    <style name="RadioButton4">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">76dp</item>
+    </style>
+
+    <style name="Buttons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#D50000</item>
+        <item name="android:background">#D7CCC8</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:padding">32dp</item>
+    </style>
+
+</resources>
