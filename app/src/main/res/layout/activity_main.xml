@@ -13,9 +13,9 @@
         android:orientation="vertical">
 
         <TextView
+            style="@style/TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TextView"
             android:text="@string/begin" />
 
         <RelativeLayout
@@ -36,7 +36,6 @@
                 android:layout_alignParentBottom="true"
                 android:hint="@string/name" />
 
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -45,48 +44,22 @@
             android:layout_marginBottom="16dp">
 
             <TextView
-                android:id="@+id/question_which_id"
+                android:id="@+id/question_when"
                 style="@style/Question.number"
                 android:text="@string/one" />
 
             <TextView
                 android:id="@+id/question1_body"
                 style="@style/Question"
-                android:layout_toEndOf="@id/question_which_id"
-                android:layout_toRightOf="@id/question_which_id"
+                android:layout_toEndOf="@id/question_when"
+                android:layout_toRightOf="@id/question_when"
                 android:text="@string/question1_body" />
 
-            <RadioGroup
-                android:id="@+id/radio_group_which"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/question_which_id"
-                android:layout_toEndOf="@id/question_which_id"
-                android:layout_toRightOf="@id/question_which_id"
-                android:orientation="vertical">
-
-                <RadioButton
-                    android:id="@+id/question1_false3"
-                    style="@style/RadioButton2"
-                    android:text="@string/question1_false3" />
-
-                <RadioButton
-                    android:id="@+id/question1_answer"
-                    style="@style/RadioButton1"
-                    android:text="@string/question1_answer" />
-
-                <RadioButton
-                    android:id="@+id/question1_false1"
-                    style="@style/RadioButton1"
-                    android:text="@string/question1_false1" />
-
-                <RadioButton
-                    android:id="@+id/question1_false2"
-                    style="@style/RadioButton1"
-                    android:text="@string/question1_false2" />
-
-
-            </RadioGroup>
+            <EditText
+                android:id="@+id/year"
+                style="@style/EditText2"
+                android:layout_below="@id/question1_body"
+                android:hint="@string/year" />
 
         </RelativeLayout>
 
@@ -136,7 +109,6 @@
                     android:id="@+id/question2_false3"
                     style="@style/RadioButton1"
                     android:text="@string/question2_false3" />
-
 
             </RadioGroup>
 
@@ -232,9 +204,9 @@
 
                 <RadioButton
                     android:id="@+id/question4_false2"
+                    style="@style/RadioButton1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/RadioButton1"
                     android:text="@string/question4_false2" />
 
                 <RadioButton
@@ -242,9 +214,7 @@
                     style="@style/RadioButton1"
                     android:text="@string/question4_false3" />
 
-
             </RadioGroup>
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -293,9 +263,7 @@
                     style="@style/RadioButton1"
                     android:text="@string/question5_false3" />
 
-
             </RadioGroup>
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -304,39 +272,30 @@
             android:layout_marginBottom="16dp">
 
             <TextView
-                android:id="@+id/question_hufflepuff_student"
+                android:id="@+id/question_which_id"
                 style="@style/Question.number"
                 android:text="@string/six" />
 
             <TextView
                 android:id="@+id/question6_body"
                 style="@style/Question"
-                android:layout_toEndOf="@id/question_hufflepuff_student"
-                android:layout_toRightOf="@id/question_hufflepuff_student"
+                android:layout_toEndOf="@id/question_which_id"
+                android:layout_toRightOf="@id/question_which_id"
                 android:text="@string/question6_body" />
 
+
             <RadioGroup
-                android:id="@+id/radio_group_hufflepuff_student"
+                android:id="@+id/radio_group_which"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/question_hufflepuff_student"
-                android:layout_toEndOf="@id/question_hufflepuff_student"
-                android:layout_toRightOf="@id/question_hufflepuff_student"
+                android:layout_below="@id/question_which_id"
+                android:layout_toEndOf="@id/question_which_id"
+                android:layout_toRightOf="@id/question_which_id"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/question6_false1"
-                    style="@style/RadioButton2"
-                    android:text="@string/question6_false1" />
-
-                <RadioButton
-                    android:id="@+id/question6_false2"
-                    style="@style/RadioButton1"
-                    android:text="@string/question6_false2" />
-
-                <RadioButton
                     android:id="@+id/question6_false3"
-                    style="@style/RadioButton1"
+                    style="@style/RadioButton2"
                     android:text="@string/question6_false3" />
 
                 <RadioButton
@@ -344,9 +303,17 @@
                     style="@style/RadioButton1"
                     android:text="@string/question6_answer" />
 
+                <RadioButton
+                    android:id="@+id/question6_false1"
+                    style="@style/RadioButton1"
+                    android:text="@string/question6_false1" />
+
+                <RadioButton
+                    android:id="@+id/question1_false2"
+                    style="@style/RadioButton1"
+                    android:text="@string/question6_false2" />
 
             </RadioGroup>
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -471,38 +438,44 @@
                 android:text="@string/question9_body" />
 
             <CheckBox
-                android:id="@+id/question9_false"
+                android:id="@+id/question9_correct"
                 style="@style/CheckBox"
                 android:layout_below="@id/question_check_the_correct"
+                android:text="@string/question9_correct" />
+
+            <CheckBox
+                android:id="@+id/question9_false"
+                style="@style/CheckBox"
+                android:layout_below="@id/question9_correct"
                 android:text="@string/question9_false" />
 
             <CheckBox
                 android:id="@+id/question9_answer"
                 style="@style/CheckBox"
                 android:layout_below="@id/question9_false"
-                android:text="@string/question9_answer"/>
+                android:text="@string/question9_answer" />
 
         </RelativeLayout>
+
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp" >
+            android:layout_marginBottom="16dp">
 
             <Button
                 android:id="@+id/score"
                 style="@style/Buttons"
-                android:onClick="showScore"
                 android:layout_alignParentLeft="true"
+                android:onClick="showScore"
                 android:text="@string/score" />
 
             <Button
                 android:id="@+id/restart"
                 style="@style/Buttons"
-                android:onClick="Reset"
                 android:layout_alignParentRight="true"
+                android:onClick="Reset"
                 android:text="@string/restart" />
-
 
 
         </RelativeLayout>

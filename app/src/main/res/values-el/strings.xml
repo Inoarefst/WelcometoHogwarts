@@ -13,48 +13,55 @@
     <string name="begin">Οι εξετάσεις αρχίζουν!</string>
     <string name="name">Το όνομάσου</string>
     <string name="score">Αποτελέσματα</string>
-    <string name="question1_body">Ποιός από τους τέσσερις είναι το φάντασμα του Γκριφιντόρ;</string>
-    <string name="question1_answer">Ο σχεδόν ακέφαλος Νικ</string>
-    <string name="question1_false1">Η γκρι κυρία</string>
-    <string name="question1_false2">Ο χοντρός Φίαρ</string>
-    <string name="question1_false3">Ο ματωμένος βαρώνος</string>
+    <string name="restart">επανεκκίνηση</string>
+    <string name="year">Νούμερο χρονιάς</string>
+
+    <string name="question6_body">Ποιός από τους τέσσερις είναι το φάντασμα του Γκριφιντόρ;</string>
+    <string name="question6_answer">Ο σχεδόν ακέφαλος Νικ</string>
+    <string name="question6_false1">Η γκρι κυρία</string>
+    <string name="question6_false2">Ο χοντρός Φίαρ</string>
+    <string name="question6_false3">Ο ματωμένος βαρώνος</string>
+
     <string name="question2_body">Το κεντρικό δωμάτιο του Γκρίφιντορ βρίσκεται στο(ν)__ όροφο.</string>
     <string name="question2_answer">έβδομο</string>
     <string name="question2_false1">τρίτο</string>
     <string name="question2_false2">πέμπτο</string>
     <string name="question2_false3">τέταρτο</string>
+
     <string name="question3_body">Το εμβληματικό ζώο του Σλίδεριν είναι ένα/μία___.</string>
     <string name="question3_answer">φίδι</string>
     <string name="question3_false1">τίγρης</string>
     <string name="question3_false2">αετός</string>
     <string name="question3_false3">αρκούδα</string>
+
     <string name="question4_body">Σλίδεριν αντιστοιχεί έντονα με το στοιχείο του/της___.</string>
     <string name="question4_answer">νερού</string>
     <string name="question4_false1">φωτιάς</string>
     <string name="question4_false2">"αέρα "</string>
     <string name="question4_false3">γης</string>
+
     <string name="question5_body">Οι μαθητές που επιλέγονται στο σπίτι του Χαφλπαθ συχνά επιδεικνύουν εκπληκτικές ικανότητες στην/στα___.</string>
     <string name="question5_answer">βοτανολογία</string>
     <string name="question5_false1">μαγικά φίλτρα</string>
     <string name="question5_false2">διαίσθηση</string>
     <string name="question5_false3">αστρονομία</string>
-    <string name="question6_body">Ποιος από αυτούς τους μαθητές δεν είναι ένας Χαφλπαθ;</string>
-    <string name="restart">επανεκκίνηση</string>
-    <string name="question6_answer">Μίλισεντ Μπουλστροντ</string>
-    <string name="question6_false1">Έρνιε Μακ Μίλαν</string>
-    <string name="question6_false2">Σούζαν Μπόουνς</string>
-    <string name="question6_false3">Τζάστιν Φιτς-Φλέτσεη</string>
+
+    <string name="question1_body">Ποια χρονιά γεννήθηκε ο Τομ Ρίντλ;</string>
+
     <string name="question7_body">Για να εισέλθεις στο κρντρικό δωμάτιο του Ρέβενκλόου πρέπει να __.</string>
     <string name="question7_answer">λύσεις ένα γρίφο</string>
     <string name="question7_false1">πεις τον κωδικό</string>
     <string name="question7_false2">λύσεις ένα παζλ</string>
     <string name="question7_false3">σπάσεις την πόρτα</string>
+
     <string name="question8_body">Η Ιγνάντια ΓουάλντΣμιθ ευφήυρε</string>
     <string name="question8_answer">την σκόνη της αιώρησης</string>
+    <string name="question8_false1">την υγρή τύχη</string>
+    <string name="question8_false3">σεληνόσκοπο</string>
     <string name="question8_false2">"το φίλτρο της αγάπης "</string>
+
     <string name="question9_body">Σημείωσε αυτό που είναι σωστό</string>
     <string name="question9_false">Ο Τομ Ριντλ είναι ο μικρός αδελφός του Βολντεμορτ.</string>
     <string name="question9_answer">Ο Ρεμους Λούπιν είχε δαγκωθει από λυκάνθρωπο στην ηλικία των πέντε ετών .</string>
-    <string name="question8_false1">την υγρή τύχη</string>
-    <string name="question8_false3">σεληνόσκοπο</string>
+    <string name="question9_correct">Το μενταγιόν του Σλίδεριν άνηκε στην μητέρα του Βόλντεμορτ.</string>
 </resources>

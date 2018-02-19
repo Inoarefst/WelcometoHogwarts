@@ -12,14 +12,11 @@
     <string name="nine">9</string>
     <string name="begin">Your O.W.L.S. begin!</string>
     <string name="name">Your Name</string>
+    <string name="year">Year number</string>
     <string name="score">Score</string>
     <string name="restart">Restart</string>
 
-    <string name="question1_body">Which of these four is the ghost of Gryffindor ?</string>
-    <string name="question1_answer">Nearly headless Nick</string>
-    <string name="question1_false1">The grey lady</string>
-    <string name="question1_false2">Fat Friar</string>
-    <string name="question1_false3">The bloody Baron</string>
+    <string name="question1_body">What year Tom Riddle was born?</string>
 
     <string name="question2_body">The Gryffindor Common Room is located on the ___floor.</string>
     <string name="question2_answer">seventh</string>
@@ -45,11 +42,11 @@
     <string name="question5_false2">divination</string>
     <string name="question5_false3">astronomy</string>
 
-    <string name="question6_body">Which of these students is not a hufflepuff ?</string>
-    <string name="question6_answer">Millicent Bulstrode</string>
-    <string name="question6_false1">Ernie Mac Millan</string>
-    <string name="question6_false2">Susan Bones</string>
-    <string name="question6_false3">Justin Finch-Fletchley</string>
+    <string name="question6_body">Which of these four is the ghost of Gryffindor ?</string>
+    <string name="question6_answer">Nearly headless Nick</string>
+    <string name="question6_false1">The grey lady</string>
+    <string name="question6_false2">Fat Friar</string>
+    <string name="question6_false3">The bloody Baron</string>
 
     <string name="question7_body">To enter the Ravenclaw Common Room you have to __.</string>
     <string name="question7_answer">solve a riddle</string>
@@ -63,10 +60,10 @@
     <string name="question8_false2">love potions</string>
     <string name="question8_false3">felix felicis</string>
 
-    <string name="question9_body">Check the one who is right.</string>
+    <string name="question9_body">Check the one(s) who is(are) right.</string>
+    <string name="question9_correct">The Slytherin locket belonged to Voldemort\'s mother .</string>
     <string name="question9_false">Tom Riddle is Voldemort\'s younger brother.</string>
     <string name="question9_answer">Remus Lupin was bitten by a Greyback at the age of five.</string>
-
 
 
 </resources>
