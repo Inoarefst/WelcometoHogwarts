@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Method that displays the score.
      * This method is called when the score button is clicked.
      * Method makes a Toast displaying the total score.
      */
@@ -98,12 +99,9 @@ public class MainActivity extends AppCompatActivity {
         boolean hasAnswerQuestion8 = AnswerQuestion8.isChecked();
         if(hasAnswerQuestion8) score+=5;
 
-        boolean hasAnswerQuestion9 = AnswerQuestion9.isChecked();
-        boolean hasCorrectQuestion9 = CorrectQuestion9.isChecked();
-        boolean hasCheckBoxTom = checkBoxTom.isChecked();
-        if((hasAnswerQuestion9 && hasCorrectQuestion9)) score+=10;
-        if((hasAnswerQuestion9 && hasCheckBoxTom) ||(hasCorrectQuestion9 && hasCheckBoxTom) ) score+=5;
-        if((hasAnswerQuestion9 && hasCheckBoxTom && hasCorrectQuestion9))  score-=15;
+        if((AnswerQuestion9.isChecked() && CorrectQuestion9.isChecked() && !checkBoxTom.isChecked())) score+=10;
+        if((AnswerQuestion9.isChecked() && checkBoxTom.isChecked() && !CorrectQuestion9.isChecked()) ||(CorrectQuestion9.isChecked() && checkBoxTom.isChecked() && !AnswerQuestion9.isChecked())) score+=5;
+        if((AnswerQuestion9.isChecked() && CorrectQuestion9.isChecked() && checkBoxTom.isChecked()))  score-=15;
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.themesong);
         mediaPlayer.start();
@@ -123,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method resets the  quiz .
+     * Method that resets the  quiz .
      * This method is called when the restart button is clicked.
      */
     public void Reset(View view) {
@@ -139,7 +137,5 @@ public class MainActivity extends AppCompatActivity {
         checkBoxTom.setChecked(false);
         AnswerQuestion9.setChecked(false);
         CorrectQuestion9.setChecked(false);
-
-
     }
 }
