@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
         if((AnswerQuestion9.isChecked() && CorrectQuestion9.isChecked() && !checkBoxTom.isChecked())) score+=10;
         if((AnswerQuestion9.isChecked() && checkBoxTom.isChecked() && !CorrectQuestion9.isChecked()) ||(CorrectQuestion9.isChecked() && checkBoxTom.isChecked() && !AnswerQuestion9.isChecked())) score+=5;
-        if((AnswerQuestion9.isChecked() && CorrectQuestion9.isChecked() && checkBoxTom.isChecked()))  score-=15;
+        if((AnswerQuestion9.isChecked() && CorrectQuestion9.isChecked() && checkBoxTom.isChecked()))  score+=0;
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.themesong);
         mediaPlayer.start();
