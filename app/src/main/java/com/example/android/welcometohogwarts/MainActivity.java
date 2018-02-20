@@ -16,15 +16,15 @@ import android.widget.Toast;
  */
 
 public class MainActivity extends AppCompatActivity {
-    RadioButton AnswerQuestion6;
-    RadioButton AnswerQuestion2;
-    RadioButton AnswerQuestion3;
-    RadioButton AnswerQuestion4;
-    RadioButton AnswerQuestion5;
-    RadioButton AnswerQuestion7;
-    RadioButton AnswerQuestion8;
-    CheckBox AnswerQuestion9;
-    CheckBox CorrectQuestion9;
+    RadioButton answerQuestion6;
+    RadioButton answerQuestion2;
+    RadioButton answerQuestion3;
+    RadioButton answerQuestion4;
+    RadioButton answerQuestion5;
+    RadioButton answerQuestion7;
+    RadioButton answerQuestion8;
+    CheckBox answerQuestion9;
+    CheckBox checkBoxSalazar;
     RadioGroup radioWhich;
     RadioGroup radioCommonRoom;
     RadioGroup radioEmblematic;
@@ -41,15 +41,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        AnswerQuestion2 = findViewById(R.id.question2_answer);
-        AnswerQuestion3 = findViewById(R.id.question3_answer);
-        AnswerQuestion4 = findViewById(R.id.question4_answer);
-        AnswerQuestion5 = findViewById(R.id.question5_answer);
-        AnswerQuestion6 = findViewById(R.id.question6_answer);
-        AnswerQuestion7 = findViewById(R.id.question7_answer);
-        AnswerQuestion8 = findViewById(R.id.question8_answer);
-        AnswerQuestion9 = findViewById(R.id.question9_answer);
-        CorrectQuestion9 = findViewById(R.id.question9_correct);
+        answerQuestion2 = findViewById(R.id.question2_answer);
+        answerQuestion3 = findViewById(R.id.question3_answer);
+        answerQuestion4 = findViewById(R.id.question4_answer);
+        answerQuestion5 = findViewById(R.id.question5_answer);
+        answerQuestion6 = findViewById(R.id.question6_answer);
+        answerQuestion7 = findViewById(R.id.question7_answer);
+        answerQuestion8 = findViewById(R.id.question8_answer);
+        answerQuestion9 = findViewById(R.id.question9_answer);
+        checkBoxSalazar = findViewById(R.id.question9_correct);
         radioWhich = findViewById(R.id.radio_group_which);
         radioCommonRoom = findViewById(R.id.radio_group_common_room);
         radioEmblematic = findViewById(R.id.radio_group_emblematic);
@@ -78,30 +78,31 @@ public class MainActivity extends AppCompatActivity {
         String year = Riddle.getText().toString();
         if(year.equals("1926")) score+=5;
 
-        boolean hasAnswerQuestion2 = AnswerQuestion2.isChecked();
+        boolean hasAnswerQuestion2 = answerQuestion2.isChecked();
         if(hasAnswerQuestion2) score+=5;
 
-        boolean hasAnswerQuestion3 = AnswerQuestion3.isChecked();
+        boolean hasAnswerQuestion3 = answerQuestion3.isChecked();
         if(hasAnswerQuestion3) score+=5;
 
-        boolean hasAnswerQuestion4 = AnswerQuestion4.isChecked();
+        boolean hasAnswerQuestion4 = answerQuestion4.isChecked();
         if(hasAnswerQuestion4) score+=5;
 
-        boolean hasAnswerQuestion5 = AnswerQuestion5.isChecked();
+        boolean hasAnswerQuestion5 = answerQuestion5.isChecked();
         if(hasAnswerQuestion5) score+=5;
 
-        boolean hasAnswerQuestion6 = AnswerQuestion6.isChecked();
+        boolean hasAnswerQuestion6 = answerQuestion6.isChecked();
         if(hasAnswerQuestion6) score = score + 5;
 
-        boolean hasAnswerQuestion7 = AnswerQuestion7.isChecked();
+        boolean hasAnswerQuestion7 = answerQuestion7.isChecked();
         if(hasAnswerQuestion7) score+=5;
 
-        boolean hasAnswerQuestion8 = AnswerQuestion8.isChecked();
+        boolean hasAnswerQuestion8 = answerQuestion8.isChecked();
         if(hasAnswerQuestion8) score+=5;
 
-        if((AnswerQuestion9.isChecked() && CorrectQuestion9.isChecked() && !checkBoxTom.isChecked())) score+=10;
-        if((AnswerQuestion9.isChecked() && checkBoxTom.isChecked() && !CorrectQuestion9.isChecked()) ||(CorrectQuestion9.isChecked() && checkBoxTom.isChecked() && !AnswerQuestion9.isChecked())) score+=5;
-        if((AnswerQuestion9.isChecked() && CorrectQuestion9.isChecked() && checkBoxTom.isChecked()))  score+=0;
+        if((answerQuestion9.isChecked() && !checkBoxSalazar.isChecked() && !checkBoxTom.isChecked())) score+=10;
+        if((answerQuestion9.isChecked() && checkBoxTom.isChecked() && !checkBoxSalazar.isChecked()) ||(checkBoxSalazar.isChecked() && answerQuestion9.isChecked() && !checkBoxTom.isChecked())) score+=5;
+        if((checkBoxTom.isChecked() && checkBoxSalazar.isChecked() && !answerQuestion9.isChecked())) score+=0;
+        if((answerQuestion9.isChecked() && checkBoxSalazar.isChecked() && checkBoxTom.isChecked()))  score+=0;
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.themesong);
         mediaPlayer.start();
@@ -124,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
      * Method that resets the  quiz .
      * This method is called when the restart button is clicked.
      */
-    public void Reset(View view) {
+    public void reset(View view) {
         name.setText("");
         year.setText("");
         radioCommonRoom.clearCheck();
@@ -135,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         radioEntrance.clearCheck();
         radioIgnatia.clearCheck();
         checkBoxTom.setChecked(false);
-        AnswerQuestion9.setChecked(false);
-        CorrectQuestion9.setChecked(false);
+        answerQuestion9.setChecked(false);
+        checkBoxSalazar.setChecked(false);
     }
 }
