@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton answerQuestion7;
     RadioButton answerQuestion8;
     CheckBox answerQuestion9;
-    CheckBox checkBoxSalazar;
+    CheckBox correctQuestion9;
     RadioGroup radioWhich;
     RadioGroup radioCommonRoom;
     RadioGroup radioEmblematic;
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         answerQuestion7 = findViewById(R.id.question7_answer);
         answerQuestion8 = findViewById(R.id.question8_answer);
         answerQuestion9 = findViewById(R.id.question9_answer);
-        checkBoxSalazar = findViewById(R.id.question9_correct);
+        correctQuestion9 = findViewById(R.id.question9_correct);
         radioWhich = findViewById(R.id.radio_group_which);
         radioCommonRoom = findViewById(R.id.radio_group_common_room);
         radioEmblematic = findViewById(R.id.radio_group_emblematic);
@@ -99,10 +99,9 @@ public class MainActivity extends AppCompatActivity {
         boolean hasAnswerQuestion8 = answerQuestion8.isChecked();
         if(hasAnswerQuestion8) score+=5;
 
-        if((answerQuestion9.isChecked() && !checkBoxSalazar.isChecked() && !checkBoxTom.isChecked())) score+=10;
-        if((answerQuestion9.isChecked() && checkBoxTom.isChecked() && !checkBoxSalazar.isChecked()) ||(checkBoxSalazar.isChecked() && answerQuestion9.isChecked() && !checkBoxTom.isChecked())) score+=5;
-        if((checkBoxTom.isChecked() && checkBoxSalazar.isChecked() && !answerQuestion9.isChecked())) score+=0;
-        if((answerQuestion9.isChecked() && checkBoxSalazar.isChecked() && checkBoxTom.isChecked()))  score+=0;
+        if((answerQuestion9.isChecked() && !correctQuestion9.isChecked() && !checkBoxTom.isChecked())) score+=5;
+        if((answerQuestion9.isChecked() && checkBoxTom.isChecked() && !correctQuestion9.isChecked()) ||(correctQuestion9.isChecked() && checkBoxTom.isChecked() && !answerQuestion9.isChecked())) score+=0;
+        if((answerQuestion9.isChecked() && correctQuestion9.isChecked() && checkBoxTom.isChecked()))  score-=5;
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.themesong);
         mediaPlayer.start();
@@ -137,6 +136,6 @@ public class MainActivity extends AppCompatActivity {
         radioIgnatia.clearCheck();
         checkBoxTom.setChecked(false);
         answerQuestion9.setChecked(false);
-        checkBoxSalazar.setChecked(false);
+        correctQuestion9.setChecked(false);
     }
 }

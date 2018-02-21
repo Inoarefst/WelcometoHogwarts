@@ -61,9 +61,7 @@
     <string name="question8_false3">felix felicis</string>
 
     <string name="question9_body">Check the one(s) who is(are) right.</string>
-    <string name="question9_false2">The Slytherin locket belonged to Salazar\'s mother .</string>
+    <string name="question9_correct">The Slytherin locket belonged to Voldemort\'s mother .</string>
     <string name="question9_false">Tom Riddle is Voldemort\'s younger brother.</string>
     <string name="question9_answer">Remus Lupin was bitten by a Greyback at the age of five.</string>
-
-
 </resources>
