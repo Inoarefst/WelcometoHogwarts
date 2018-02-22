@@ -1,8 +1,8 @@
 package com.example.android.welcometohogwarts;
 
 import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -36,20 +36,19 @@ public class MainActivity extends AppCompatActivity {
     EditText name;
     EditText year;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        answerQuestion2 = findViewById(R.id.question2_answer);
-        answerQuestion3 = findViewById(R.id.question3_answer);
-        answerQuestion4 = findViewById(R.id.question4_answer);
-        answerQuestion5 = findViewById(R.id.question5_answer);
-        answerQuestion6 = findViewById(R.id.question6_answer);
-        answerQuestion7 = findViewById(R.id.question7_answer);
-        answerQuestion8 = findViewById(R.id.question8_answer);
-        answerQuestion9 = findViewById(R.id.question9_answer);
-        correctQuestion9 = findViewById(R.id.question9_correct);
+        answerQuestion2 = findViewById(R.id.rb_question2_answer);
+        answerQuestion3 = findViewById(R.id.rb_question3_answer);
+        answerQuestion4 = findViewById(R.id.rb_question4_answer);
+        answerQuestion5 = findViewById(R.id.rb_question5_answer);
+        answerQuestion6 = findViewById(R.id.rb_question6_answer);
+        answerQuestion7 = findViewById(R.id.rb_question7_answer);
+        answerQuestion8 = findViewById(R.id.rb_question8_answer);
+        answerQuestion9 = findViewById(R.id.cb_question9_answer);
+        correctQuestion9 = findViewById(R.id.cb_question9_correct);
         radioWhich = findViewById(R.id.radio_group_which);
         radioCommonRoom = findViewById(R.id.radio_group_common_room);
         radioEmblematic = findViewById(R.id.radio_group_emblematic);
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         radioAbilities = findViewById(R.id.radio_group_abilities);
         radioEntrance = findViewById(R.id.radio_group_entrance);
         radioIgnatia = findViewById(R.id.radio_group_ignatia);
-        checkBoxTom = findViewById(R.id.question9_false);
+        checkBoxTom = findViewById(R.id.cb_question9_false);
         name = findViewById(R.id.users_name_view);
         year = findViewById(R.id.year);
     }
@@ -67,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the score button is clicked.
      * Method makes a Toast displaying the total score.
      */
-
     public void showScore(View view) {
         int score = 0;
         //Get user's name.
@@ -76,32 +74,35 @@ public class MainActivity extends AppCompatActivity {
 
         EditText Riddle = findViewById(R.id.year);
         String year = Riddle.getText().toString();
-        if(year.equals("1926")) score+=5;
+        if (year.equals("1926")) score += 5;
 
         boolean hasAnswerQuestion2 = answerQuestion2.isChecked();
-        if(hasAnswerQuestion2) score+=5;
+        if (hasAnswerQuestion2) score += 5;
 
         boolean hasAnswerQuestion3 = answerQuestion3.isChecked();
-        if(hasAnswerQuestion3) score+=5;
+        if (hasAnswerQuestion3) score += 5;
 
         boolean hasAnswerQuestion4 = answerQuestion4.isChecked();
-        if(hasAnswerQuestion4) score+=5;
+        if (hasAnswerQuestion4) score += 5;
 
         boolean hasAnswerQuestion5 = answerQuestion5.isChecked();
-        if(hasAnswerQuestion5) score+=5;
+        if (hasAnswerQuestion5) score += 5;
 
         boolean hasAnswerQuestion6 = answerQuestion6.isChecked();
-        if(hasAnswerQuestion6) score = score + 5;
+        if (hasAnswerQuestion6) score = score + 5;
 
         boolean hasAnswerQuestion7 = answerQuestion7.isChecked();
-        if(hasAnswerQuestion7) score+=5;
+        if (hasAnswerQuestion7) score += 5;
 
         boolean hasAnswerQuestion8 = answerQuestion8.isChecked();
-        if(hasAnswerQuestion8) score+=5;
+        if (hasAnswerQuestion8) score += 5;
 
-        if((answerQuestion9.isChecked() && !correctQuestion9.isChecked() && !checkBoxTom.isChecked())) score+=5;
-        if((answerQuestion9.isChecked() && checkBoxTom.isChecked() && !correctQuestion9.isChecked()) ||(correctQuestion9.isChecked() && checkBoxTom.isChecked() && !answerQuestion9.isChecked())) score+=0;
-        if((answerQuestion9.isChecked() && correctQuestion9.isChecked() && checkBoxTom.isChecked()))  score-=5;
+        if ((answerQuestion9.isChecked() && !correctQuestion9.isChecked() && !checkBoxTom.isChecked()))
+            score += 5;
+        if ((answerQuestion9.isChecked() && checkBoxTom.isChecked() && !correctQuestion9.isChecked()) || (correctQuestion9.isChecked() && checkBoxTom.isChecked() && !answerQuestion9.isChecked()))
+            score += 0;
+        if ((answerQuestion9.isChecked() && correctQuestion9.isChecked() && checkBoxTom.isChecked()))
+            score -= 5;
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.themesong);
         mediaPlayer.start();
@@ -111,12 +112,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if ((score <= 45) && (score > 25)) {
-            Toast.makeText(this,  name + "\n your score is " + score + " out of 50 " + "\n You are going to be an excellent Wizard", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, name + "\n your score is " + score + " out of 50 " + "\n You are going to be an excellent Wizard", Toast.LENGTH_LONG).show();
         }
         if (score == 25) {
-            Toast.makeText(this,  name + "\n your score is " + score + " out of 50 " + "\n You have great skills . Keep up the good work .", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, name + "\n your score is " + score + " out of 50 " + "\n You have great skills . Keep up the good work .", Toast.LENGTH_LONG).show();
         } else if (score < 25) {
-            Toast.makeText(this,  name + "\n your score is " + score + " out of 50 " + "\n You must try harder . Muggles can score better than this!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, name + "\n your score is " + score + " out of 50 " + "\n You must try harder . Muggles can score better than this!", Toast.LENGTH_LONG).show();
         }
     }
 

@@ -63,5 +63,5 @@
     <string name="question9_body">Σημείωσε αυτό που είναι σωστό</string>
     <string name="question9_false">Ο Τομ Ριντλ είναι ο μικρός αδελφός του Βολντεμορτ.</string>
     <string name="question9_answer">Ο Ρεμους Λούπιν είχε δαγκωθει από λυκάνθρωπο στην ηλικία των πέντε ετών .</string>
-    <string name="question9_false2">Το μενταγιόν του Σλίδεριν ανήκε στην μητέρα του Σάλαζαρ .</string>
+    <string name="question9_correct">Το μενταγιόν του Σλίδεριν ανήκε στην μητέρα του Βόλντεμορτ.</string>
 </resources>
